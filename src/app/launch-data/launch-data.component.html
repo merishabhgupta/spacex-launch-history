@@ -1,0 +1,14 @@
+<div fxLayout="row" fxLayoutAlign="space-between center" >
+    <div fxFlex="20" fxFlexAlign="start" fxLayout="column" fxLayoutAlign="start center">
+        <app-filter fxFlex></app-filter>
+    </div>
+
+    <div fxFlex="70" fxLayout="row wrap" >
+        <div fxFlex="25" *ngFor = "let shuttleInfo of defaultShuttleInfo$ | async">
+            <app-shuttle-info fxFlex [shuttleInfo] = "shuttleInfo"></app-shuttle-info>
+        </div>
+    </div>
+
+</div>
+
+

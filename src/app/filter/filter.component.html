@@ -1,0 +1,28 @@
+<div fxLayout="column">
+    <h6 fxFlex>Filters</h6>
+    <p fxFlex>Launch Year</p>
+    <hr>
+    <div fxFlex fxLayout="row wrap">
+        <div fxFlex="50" *ngFor="let year of years_list">
+            <button type="button" class="filterButton" (click)="setNewYear(year)">{{ year }}</button>
+        </div>
+    </div>
+    <p fxFlex>Successful Launch</p>
+    <div fxFlex fxLayout="row">
+        <div fxFlex="50">
+            <button type="button" class="filterButton" (click)="successFullLauchToggle('true')">True</button>
+        </div>
+        <div fxFlex="50">
+            <button type="button" class="filterButton" (click)="successFullLauchToggle('false')">False</button>
+        </div>
+    </div>
+    <p fxFlex>Successful Landing</p>
+    <div fxFlex fxLayout="row">
+        <div fxFlex="50" >
+            <button type="button" class="filterButton" (click)="successFullLandToggle('true')">True</button>
+        </div>
+        <div fxFlex="50" >
+            <button type="button" class="filterButton" (click)="successFullLandToggle('false')">False</button>
+        </div>
+    </div>
+</div>

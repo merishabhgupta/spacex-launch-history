@@ -1,0 +1,28 @@
+.filterButton {
+    background-color: #9bcc56d1;
+    border: none;
+    border-radius: 12%;
+    color: black;
+    padding: 1px 11px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 13px;
+}
+
+.filterButton:focus {
+    background-color: #5e7c35fa;
+}
+
+/* hr {
+    margin-top: -1rem;
+    margin-bottom: 0rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+p {
+    margin-top: 13px;
+    margin-bottom: 1rem;
+} */
