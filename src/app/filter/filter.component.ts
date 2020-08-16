@@ -14,7 +14,7 @@ export class FilterComponent implements OnInit {
 
   constructor(
     private router: Router
-  ) { 
+  ) {
     this.filterData = {}
   }
 
@@ -32,7 +32,6 @@ export class FilterComponent implements OnInit {
   successFullLauchToggle(successfullLaunch: string){
     this.filterData.successfulLaunch = successfullLaunch;
     this.router.navigate(['shuttle'], {queryParams: {successFullLaunch: successfullLaunch}, queryParamsHandling: 'merge'});
-    console.log(successfullLaunch)
   }
 
   successFullLandToggle(successfullLand: string) {

@@ -11,8 +11,14 @@
     margin-top: 13px;
 }
 
-.filterButton:focus {
-    background-color: #5e7c35fa;
+
+.filterButtonsContainer{
+  margin-top: 1%;
+  margin-bottom: 10%;
+}
+
+.buttonHightlighted{
+  background-color: #5e7c35fa;
 }
 
 /* hr {

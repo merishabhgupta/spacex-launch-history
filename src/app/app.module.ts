@@ -13,8 +13,7 @@ import { LaunchDataComponent } from './launch-data/launch-data.component';
 import { LaunchDataService } from './launch-data.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ShuttleInfoComponent } from './shuttle-info/shuttle-info.component';
-
-
+import { CustomBreakpointsModule } from './custom-breakpoints/custom-breakpoints.module';
 
 @NgModule({
   declarations: [
@@ -31,7 +30,8 @@ import { ShuttleInfoComponent } from './shuttle-info/shuttle-info.component';
     MatButtonToggleModule,
     MatDividerModule,
     MatCardModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    CustomBreakpointsModule
   ],
   providers: [LaunchDataService],
   bootstrap: [AppComponent]
