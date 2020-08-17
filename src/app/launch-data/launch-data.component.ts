@@ -13,7 +13,6 @@ import { FilterData } from '../model/fiter-data';
 })
 export class LaunchDataComponent implements OnInit {
   defaultShuttleInfo$: Observable<ShuttleInfo[]> ;
-  toggleValue: string = "hwlloo"
 
   constructor(
     private launchDataService: LaunchDataService,

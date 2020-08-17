@@ -1,10 +1,10 @@
-<mat-card fxFlex fxLayout="column">
+<mat-card fxFlex fxLayout="column" *ngIf="shuttleInfo">
     <img fxFlex mat-card-image src="{{ shuttleInfo.links.mission_patch_small}}" alt="{{ shuttleInfo.mission_name}} logo">
     <mat-card-header fxFlex>
         <mat-card-title>{{ shuttleInfo.mission_name }}
             <mat-card-subtitle># {{ shuttleInfo.flight_number}}</mat-card-subtitle>
         </mat-card-title>
-        
+
     </mat-card-header>
     <mat-card-content fxFlex>
         <div fxLayout="column">
@@ -12,6 +12,6 @@
             <label fxFlex>Launch Year: <span>{{ shuttleInfo.launch_year }}</span> </label>
             <label fxFlex>Successful Launch: <span>{{ shuttleInfo.launch_success }}</span> </label>
             <label fxFlex>Successful Landing: <span>{{ shuttleInfo.launch_landing }}</span></label>
-        </div> 
+        </div>
     </mat-card-content>
 </mat-card>

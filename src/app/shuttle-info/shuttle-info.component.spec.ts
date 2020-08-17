@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ShuttleInfoComponent } from './shuttle-info.component';
+import { AppMaterialModule } from '../app-material/app-material.module';
 
 describe('ShuttleInfoComponent', () => {
   let component: ShuttleInfoComponent;
@@ -8,7 +9,8 @@ describe('ShuttleInfoComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ShuttleInfoComponent ]
+      declarations: [ ShuttleInfoComponent ],
+      imports: [AppMaterialModule]
     })
     .compileComponents();
   }));

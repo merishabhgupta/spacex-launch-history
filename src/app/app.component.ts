@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  title = 'ps-xt-assignment';
-  
+  title = "SpaceX Launch Programs";
+
 }

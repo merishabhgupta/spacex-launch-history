@@ -6,14 +6,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FilterComponent } from './filter/filter.component';
 
-import {MatButtonToggleModule} from '@angular/material/button-toggle';
-import { MatDividerModule, MatCardModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { LaunchDataComponent } from './launch-data/launch-data.component';
 import { LaunchDataService } from './launch-data.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ShuttleInfoComponent } from './shuttle-info/shuttle-info.component';
 import { CustomBreakpointsModule } from './custom-breakpoints/custom-breakpoints.module';
+import { AppMaterialModule } from './app-material/app-material.module';
 
 @NgModule({
   declarations: [
@@ -27,11 +26,9 @@ import { CustomBreakpointsModule } from './custom-breakpoints/custom-breakpoints
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    MatButtonToggleModule,
-    MatDividerModule,
-    MatCardModule,
     FlexLayoutModule,
-    CustomBreakpointsModule
+    CustomBreakpointsModule,
+    AppMaterialModule
   ],
   providers: [LaunchDataService],
   bootstrap: [AppComponent]
