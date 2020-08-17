@@ -58,4 +58,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Lighthouse Report
 
-![web.dev screenshot](Lighthouse.png?raw=true "Lighthouse Report")
+![web.dev screenshot](Lighthouse.jpg?raw=true "Lighthouse Report")
