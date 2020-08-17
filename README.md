@@ -1,5 +1,6 @@
 # PsXtAssignment
-Application link: 
+Application link: `https://spacex-ps-xt.herokuapp.com/shuttle`
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.2.
 
 This project makes use of Angular's HttpClient Module to make api calls and get the response. In order to set the query parameters for Launch Year/Successful Landing/Successful Launch, the httpParams class is used to set and append the parameters to given api URL.
@@ -18,10 +19,14 @@ For visual improvements and to make application response flex-layout is used.
 To deploy and run app on Heroku platform, express is used to provide the server for production environment.
 
 ## Local Setup
+
 For setting up the application in local environment, clone the repository `git clone https://github.com/merishabhgupta/spacex-launch-history.git` and run `npm install` in the project root directory to install the npm dependencies.
 
-Change the "start": "node server.js" in scripts part of the package.json file to "start": "ng serve"
 Follow the below mentioned details for running/ developing/ testing the application.
+
+## Running with SSR
+
+Run `npm run build:ssr` for building the application. Then run `npm run serve:ssr` to run the application. Navigate to `http://localhost:4000/`
 
 ## Development server
 
@@ -37,7 +42,11 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io)
+
+## Running unit tests with code coverage
+Run `ng test --codeCoverage=true` to execute the unit tests via [Karma](https://karma-runner.github.io)
+
 
 ## Running end-to-end tests
 
