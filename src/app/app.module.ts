@@ -23,7 +23,7 @@ import { CustomBreakpointsModule } from './custom-breakpoints/custom-breakpoints
     ShuttleInfoComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     FormsModule,
     HttpClientModule,

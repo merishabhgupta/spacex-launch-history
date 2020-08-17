@@ -1,6 +1,27 @@
 # PsXtAssignment
-
+Application link: 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.2.
+
+This project makes use of Angular's HttpClient Module to make api calls and get the response. In order to set the query parameters for Launch Year/Successful Landing/Successful Launch, the httpParams class is used to set and append the parameters to given api URL.
+
+App is divided into 4 components:
+AppComponent: The component provided by angular where we have given router-outlet.
+
+FilterComponent: This component is used to filter the launch data on UI and make the navigation of app based on the selected filter parameters.
+
+ShuttleInfoComponent: This component shows the shuttle launch info. This is the child component of LaunchDataComponent.
+
+LaunchDataComponent: This component is where the app defaults to. In this component the the FilterComponent and ShuttleInfoComponent are called. This component imports the LaunchDataService class to make api calls.
+
+For visual improvements and to make application response flex-layout is used.
+
+To deploy and run app on Heroku platform, express is used to provide the server for production environment.
+
+## Local Setup
+For setting up the application in local environment, clone the repository `git clone https://github.com/merishabhgupta/spacex-launch-history.git` and run `npm install` in the project root directory to install the npm dependencies.
+
+Change the "start": "node server.js" in scripts part of the package.json file to "start": "ng serve"
+Follow the below mentioned details for running/ developing/ testing the application.
 
 ## Development server
 

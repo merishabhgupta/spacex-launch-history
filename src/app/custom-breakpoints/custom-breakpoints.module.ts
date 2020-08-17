@@ -30,7 +30,7 @@ const CUSTOM_BREAKPOINTS = [
 }
 ];
 
-function customBreakPointProvider():BreakPoint[]{
+export function customBreakPointProvider():BreakPoint[]{
   return CUSTOM_BREAKPOINTS
 }
 @NgModule({
